@@ -1,12 +1,12 @@
 new Vue({
     el: "#app",
     data: {
-        text: '',
-        todos: []
+        text: "",
+        todos: [],
     },
-    methods: {
-        addText: function() {
-
+    computed: {
+        addTexts: function() {
+            return this.todos = this.text;
         }
     }
 })

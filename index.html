@@ -12,6 +12,9 @@
     <div id="app">
         <input type="text" v-model="text">
         <button v-on:click="">追加</button>
+        <ul>
+            <li v-for="addText in addTexts">{{ addText }}</li>
+        </ul>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
