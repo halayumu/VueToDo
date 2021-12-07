@@ -4,9 +4,10 @@ new Vue({
         text: "",
         todos: [],
     },
-    computed: {
+
+    methods: {
         addTexts: function() {
-            return this.todos = this.text;
+            this.todos = this.text;
         }
     }
 })
