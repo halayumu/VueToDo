@@ -8,7 +8,6 @@ new Vue({
     methods: {
         addTexts: function() {
             this.todos = this.text
-
         }
     }
 })
