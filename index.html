@@ -9,11 +9,12 @@
 </head>
 
 <body>
+    <h1>ToDo</h1>
     <div id="app">
         <input type="text" v-model="text">
-        <button v-on:click="">追加</button>
+        <button v-on:click="addTexts">追加</button>
         <ul>
-            <li v-for="addText in addTexts">{{ todos }}</li>
+            <li v-for="todo in todos">{{ todos }}</li>
         </ul>
     </div>
 
