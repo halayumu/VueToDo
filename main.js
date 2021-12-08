@@ -7,7 +7,7 @@ new Vue({
 
     methods: {
         addTexts: function() {
-            this.todos = this.text
+            this.todos.push(this.text)
         }
     }
 })
