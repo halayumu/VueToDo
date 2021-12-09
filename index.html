@@ -9,12 +9,24 @@
 </head>
 
 <body>
-    <h1>ToDo</h1>
+    <!-- <h1>ToDo</h1>
     <div id="app">
         <input type="text" v-model="text">
         <button v-on:click="addTexts">追加</button>
         <ul>
             <li v-for="todo in todos">{{ todos }}</li>
+        </ul>
+    </div> -->
+    <div id="app">
+        <div class="form">
+            <!-- <div>{{ inputText }}</div> -->
+            <input v-model="inputText" type="text">
+            <button @click="onAdd">追加</button>
+        </div>
+        <ul class="lists">
+            <li v-for="(list, index) in lists">
+                <span>{{ index }} - {{ list.name }}</span>
+            </li>
         </ul>
     </div>
 
